@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input {
+  font-size: inherit;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  background-color: rgba(255, 248, 196, 0.615);
+  border-radius: 5px;
+  /* padding: 20px; */
+  height: 70vh;
+  width: 33%;
+  position: relative;
+}
+header {
+  background: url(../img/bg.jpg) bottom left/cover no-repeat;
+  padding: 30px 0 0;
+}
+.header {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffffd6;
+  padding: 10px 0 20px;
+}
+/*=================================== form /*===================================*/
+#task {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  width: 90%;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+#task:focus {
+  outline: none;
+}
+#task::placeholder {
+  color: #ffffffd6;
+}
+#add__btn {
+  border-radius: 50%;
+  border: none;
+  width: 20px;
+  height: 20px;
+  color: #000000bc;
+  background-color: rgba(244, 244, 8, 0.877);
+  cursor: pointer;
+}
+#add__btn:hover {
+  box-shadow: 0 0 10px #fff;
+}
+#add__btn:active {
+  scale: 1.1;
+}
+
+/* todo list */
+
+.todo {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.todo__left {
+  display: flex;
+  width: 80%;
+  gap: 8px;
+}
+.todo__right {
+  display: flex;
+
+  gap: 10px;
+}
+.fa-pen-to-square {
+  color: #08f21c;
+}
+.fa-trash-can {
+  color: #ff0000;
+}
+.fa-regular {
+  color: #000;
+}
+.fa-circle-check {
+  color: #08f21c;
+}
+.todo i {
+  font-size: 1.1rem;
+}
+.checked {
+  text-decoration: line-through;
+}
+.todo {
+}
+.todo:hover {
+  background-color: #ffffffa8;
+  cursor: pointer;
+}
+/* list */
+.todo__list {
+  padding-top: 5px;
+}
+/* Notification */
+.notification {
+  position: absolute;
+  background-color: #ff0000ad;
+  height: 80px;
+  width: 300px;
+  border-radius: 20px;
+  top: -40px;
+  right: -151px;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.7s ease;
+}
+.notifi--trans {
+  opacity: 1;
+}
