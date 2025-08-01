@@ -105,6 +105,7 @@ function editTodo(todoID) {
   EditIndex = todoID;
   // nội dung index bằng thẻ được chọn
   task.value = todos[todoID].value;
+  task.focus();
 }
 // Notification
 
